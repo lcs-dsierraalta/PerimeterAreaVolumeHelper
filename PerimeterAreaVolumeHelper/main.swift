@@ -50,6 +50,7 @@ print("4 - Squared-based pyramid")
 print("5 - Rectangular prism")
 print("6 - Triangular prism")
 print("Enter your choice (1/2/3/4/5/6):")
+let choice = Int(readLine()!)!
 
 //MARK: Process
 let area = areaOfRectangle(length: givenLength, width: givenWidth)
