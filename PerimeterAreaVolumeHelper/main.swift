@@ -33,7 +33,7 @@ func areaOfCircle(radius: Double) -> Double {
 ///   - height: the height of the cylinder
 /// - Returns: surface area fo the cylinder
 func cylinderSurfaceArea(radius: Double, height: Double) -> Double {
-    
+    return 2 * Double.pi * pow(radius, 2.0) + 2 * Double.pi * radius * height
 }
 
 
