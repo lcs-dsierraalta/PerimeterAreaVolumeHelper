@@ -27,6 +27,11 @@ func areaOfCircle(radius: Double) -> Double {
 }
 
 
+/// Finds the surface area of a cylinder
+/// - Parameters:
+///   - radius: the straight line from the center of the base to its outer edge
+///   - height: the height of the cylinder
+/// - Returns: surface area fo the cylinder
 func cylinderSurfaceArea(radius: Double, height: Double) -> Double {
     
 }
