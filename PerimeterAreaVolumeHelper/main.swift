@@ -55,6 +55,11 @@ func coneSurfaceArea(radius: Double, slant: Double) -> Double {
 }
 
 
+func squarePyramidSurfaceArea(base: Double, slant: Double) -> Double {
+    return pow(base, 2.0) + 2 * base * slant
+}
+
+
 //MARK: Input
 //let givenLength = 10.0    //Set to a Double using "type inference" (swift guesses the type)
 //let givenWidth: Double = 2   //Set to a Double using "type annotation" (tell swift what to do)
