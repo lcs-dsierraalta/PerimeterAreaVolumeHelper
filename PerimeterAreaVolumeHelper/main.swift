@@ -59,9 +59,19 @@ func coneSurfaceArea(radius: Double, slant: Double) -> Double {
 /// - Parameters:
 ///   - base: the length of a side of the base
 ///   - slant: the length of the incline form the tip of the pyramid to the base
-/// - Returns: surface area of teh square pyramid
+/// - Returns: surface area of the square pyramid
 func squarePyramidSurfaceArea(base: Double, slant: Double) -> Double {
     return pow(base, 2.0) + 2 * base * slant
+}
+
+/// Finds surface area of a rectangluar prism
+/// - Parameters:
+///   - length: length of the base
+///   - width: width of the base
+///   - height: height of the prism
+/// - Returns: surface area of the rectangular prism
+func rectangularPrismSurfaceArea(length: Double, width: Double, height: Double) -> Double {
+    return 2 * (width * height + length * width + length * height)
 }
 
 
