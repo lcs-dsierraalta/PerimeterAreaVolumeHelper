@@ -102,6 +102,19 @@ case "2" :
     //Output
     print("The surface area of the sphere is \(result) square units")
     
+case "3" :
+    //Input
+    print("You have chosen cone")
+    print("")
+    print("Enter radius:", terminator: "")
+    let givenRadius = Double(readLine()!)!
+    print("Enter length of slant:", terminator: "")
+    let givenSlant = Double(readLine()!)!
+    //Process
+    let result = coneSurfaceArea(radius: givenRadius, slant: givenSlant)
+    //Output
+    print("The surface area of the sphere is \(result) square units")
+    
 default:
     print("Enter a valid selection next time")
 }
