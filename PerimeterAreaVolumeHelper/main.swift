@@ -75,7 +75,17 @@ func rectangularPrismSurfaceArea(length: Double, width: Double, height: Double) 
 }
 
 
-
+/// Finds surface area of a triangular prism
+/// - Parameters:
+///   - base: length of the bottom side of the base
+///   - length: height of the base
+///   - height: height of the prism
+///   - a: length of left side of the base
+///   - c: right of right side of the base
+/// - Returns: surface area of the triangular prism
+func triangularPrismSurfaceArea(base: Double, length: Double, height: Double, a: Double, c: Double) -> Double {
+    return base * length + a * height + base * height + c * height
+}
 
 
 //MARK: Input
