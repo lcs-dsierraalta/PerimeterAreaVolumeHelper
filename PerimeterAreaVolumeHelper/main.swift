@@ -37,6 +37,14 @@ func cylinderSurfaceArea(radius: Double, height: Double) -> Double {
 }
 
 
+/// Finds the surface area of a sphere
+/// - Parameter radius: straight line from the center of the sphere to its outer edge
+/// - Returns: Surface area of the sphere
+func sphereSurfaceArea(radius: Double) -> Double {
+    return 4 * Double.pi * pow(radius, 2.0)
+}
+
+
 //MARK: Input
 //let givenLength = 10.0    //Set to a Double using "type inference" (swift guesses the type)
 //let givenWidth: Double = 2   //Set to a Double using "type annotation" (tell swift what to do)
