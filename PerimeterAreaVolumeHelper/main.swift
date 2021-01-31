@@ -55,6 +55,11 @@ func coneSurfaceArea(radius: Double, slant: Double) -> Double {
 }
 
 
+/// Finds surface area of a square pyramid
+/// - Parameters:
+///   - base: the length of a side of the base
+///   - slant: the length of the incline form the tip of the pyramid to the base
+/// - Returns: surface area of teh square pyramid
 func squarePyramidSurfaceArea(base: Double, slant: Double) -> Double {
     return pow(base, 2.0) + 2 * base * slant
 }
