@@ -38,22 +38,47 @@ func cylinderSurfaceArea(radius: Double, height: Double) -> Double {
 
 
 //MARK: Input
-let givenLength = 10.0    //Set to a Double using "type inference" (swift guesses the type)
-let givenWidth: Double = 2   //Set to a Double using "type annotation" (tell swift what to do)
+//let givenLength = 10.0    //Set to a Double using "type inference" (swift guesses the type)
+//let givenWidth: Double = 2   //Set to a Double using "type annotation" (tell swift what to do)
 
+//Show menu and choices
 print("Hi, I am a surface area helper")
 print("What shape do you want to work with?")
+print("")
 print("1 - Cylinder")
 print("2 - Sphere")
 print("3 - Cone")
 print("4 - Squared-based pyramid")
 print("5 - Rectangular prism")
 print("6 - Triangular prism")
-print("Enter your choice (1/2/3/4/5/6):")
-let choice = Int(readLine()!)!
+print("")
+print("Enter your choice (1/2/3/4/5/6):", terminator: "")
+
+//Get selection
+let choice = readLine()!
+print("")
+
+//Ask correct secondary questions
+switch choice {
+case "1" :
+    //Input
+    print("You have chosen cylinder")
+    print("")
+    print("Enter radius:", terminator: "")
+    let givenRadius = Double(readLine()!)!
+    print("Enter height:", terminator: "")
+    let givenHeight = Double(readLine()!)!
+    //Process
+    let result = cylinderSurfaceArea(radius: givenRadius, height: givenHeight)
+    //Output
+    print("The surface area of the cylinder is \(result) square units")
+default:
+    print("Enter a valid selection next time")
+}
+
 
 //MARK: Process
-let area = areaOfRectangle(length: givenLength, width: givenWidth)
+//let area = areaOfRectangle(length: givenLength, width: givenWidth)
 
 //MARK: Output
-print("The area is \(area) square units")  //Example of "string interporlation" (print contents of a variable)
+//print("The area is \(area) square units")  //Example of "string interporlation" (print contents of a variable)
