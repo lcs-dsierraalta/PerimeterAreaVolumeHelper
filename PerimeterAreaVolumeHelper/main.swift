@@ -80,6 +80,18 @@ case "1" :
     let result = cylinderSurfaceArea(radius: givenRadius, height: givenHeight)
     //Output
     print("The surface area of the cylinder is \(result) square units")
+    
+case "2" :
+    //Input
+    print("You have chosen sphere")
+    print("")
+    print("Enter radius:", terminator: "")
+    let givenRadius = Double(readLine()!)!
+    //Process
+    let result = sphereSurfaceArea(radius: givenRadius)
+    //Output
+    print("The surface area of the sphere is \(result) square units")
+    
 default:
     print("Enter a valid selection next time")
 }
