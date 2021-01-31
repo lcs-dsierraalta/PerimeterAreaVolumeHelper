@@ -176,6 +176,25 @@ case "5" :
     //Output
     print("The surface area of the rectangular prism is \(result) square units")
     
+case "6" :
+    //Input
+    print("You have chosen triangular prism")
+    print("")
+    print("Enter length of bottom side of the base:", terminator: "")
+    let givenBase = Double(readLine()!)!
+    print("Enter lenght of the height of the base:", terminator: "")
+    let givenLength = Double(readLine()!)!
+    print("Enter height of the prism", terminator: "")
+    let givenHeight = Double(readLine()!)!
+    print("Enter length of left side of base")
+    let givenLeftSide = Double(readLine()!)!
+    print("Enter length of right side of base")
+    let givenRightSide = Double(readLine()!)!
+    //Process
+    let result = triangularPrismSurfaceArea(base: givenBase, length: givenLength, height: givenHeight, a: givenLeftSide, c: givenRightSide)
+    //Output
+    print("The surface area of the triangular prism is \(result) square units")
+    
 default:
     print("Enter a valid selection next time")
 }
