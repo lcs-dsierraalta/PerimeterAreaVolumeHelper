@@ -125,6 +125,19 @@ case "3" :
     //Output
     print("The surface area of the sphere is \(result) square units")
     
+case "4" :
+    //Input
+    print("You have chosen squared-based pryamid")
+    print("")
+    print("Enter length of base:", terminator: "")
+    let givenBase = Double(readLine()!)!
+    print("Enter length of slant:", terminator: "")
+    let givenSlant = Double(readLine()!)!
+    //Process
+    let result = squarePyramidSurfaceArea(base: givenBase, slant: givenSlant)
+    //Output
+    print("The surface area of the sphere is \(result) square units")
+    
 default:
     print("Enter a valid selection next time")
 }
