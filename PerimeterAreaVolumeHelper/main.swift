@@ -75,6 +75,9 @@ func rectangularPrismSurfaceArea(length: Double, width: Double, height: Double) 
 }
 
 
+
+
+
 //MARK: Input
 //let givenLength = 10.0    //Set to a Double using "type inference" (swift guesses the type)
 //let givenWidth: Double = 2   //Set to a Double using "type annotation" (tell swift what to do)
@@ -133,7 +136,7 @@ case "3" :
     //Process
     let result = coneSurfaceArea(radius: givenRadius, slant: givenSlant)
     //Output
-    print("The surface area of the sphere is \(result) square units")
+    print("The surface area of the cone is \(result) square units")
     
 case "4" :
     //Input
@@ -146,7 +149,22 @@ case "4" :
     //Process
     let result = squarePyramidSurfaceArea(base: givenBase, slant: givenSlant)
     //Output
-    print("The surface area of the sphere is \(result) square units")
+    print("The surface area of the square pyramid is \(result) square units")
+    
+case "5" :
+    //Input
+    print("You have chosen rectangular prism")
+    print("")
+    print("Enter length:", terminator: "")
+    let givenLength = Double(readLine()!)!
+    print("Enter width:", terminator: "")
+    let givenWidth = Double(readLine()!)!
+    print("Enter height", terminator: "")
+    let givenHeight = Double(readLine()!)!
+    //Process
+    let result = rectangularPrismSurfaceArea(length: givenLength, width: givenWidth, height: givenHeight)
+    //Output
+    print("The surface area of the rectangular prism is \(result) square units")
     
 default:
     print("Enter a valid selection next time")
