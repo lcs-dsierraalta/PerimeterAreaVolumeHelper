@@ -45,6 +45,16 @@ func sphereSurfaceArea(radius: Double) -> Double {
 }
 
 
+/// Finds the surface area of a cone
+/// - Parameters:
+///   - radius: the straight line from the center of the base to its outer edge
+///   - slant: the length of the incline from the tip of the cone to the base
+/// - Returns: surface area of the cone
+func coneSurfaceArea(radius: Double, slant: Double) -> Double {
+    return Double.pi * pow(radius, 2.0) + Double.pi * radius * slant
+}
+
+
 //MARK: Input
 //let givenLength = 10.0    //Set to a Double using "type inference" (swift guesses the type)
 //let givenWidth: Double = 2   //Set to a Double using "type annotation" (tell swift what to do)
