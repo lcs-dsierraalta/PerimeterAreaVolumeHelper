@@ -103,10 +103,9 @@ print("4 - Squared-based pyramid")
 print("5 - Rectangular prism")
 print("6 - Triangular prism")
 print("")
-print("Enter your choice (1/2/3/4/5/6):", terminator: "")
 
 //Get selection
-let choice = readLine()!
+let choice = String.collectInput(withPrompt: "Please enter you selection (1/2/3/4/5/6): ", acceptableValues: ["1", "2", "3", "4", "5", "6"])
 print("")
 
 //Ask correct secondary questions
@@ -169,7 +168,7 @@ case "5" :
     let givenLength = Double(readLine()!)!
     print("Enter width:", terminator: "")
     let givenWidth = Double(readLine()!)!
-    print("Enter height", terminator: "")
+    print("Enter height:", terminator: "")
     let givenHeight = Double(readLine()!)!
     //Process
     let result = rectangularPrismSurfaceArea(length: givenLength, width: givenWidth, height: givenHeight)
@@ -184,11 +183,11 @@ case "6" :
     let givenBase = Double(readLine()!)!
     print("Enter lenght of the height of the base:", terminator: "")
     let givenLength = Double(readLine()!)!
-    print("Enter height of the prism", terminator: "")
+    print("Enter height of the prism:", terminator: "")
     let givenHeight = Double(readLine()!)!
-    print("Enter length of left side of base")
+    print("Enter length of left side of base:")
     let givenLeftSide = Double(readLine()!)!
-    print("Enter length of right side of base")
+    print("Enter length of right side of base:")
     let givenRightSide = Double(readLine()!)!
     //Process
     let result = triangularPrismSurfaceArea(base: givenBase, length: givenLength, height: givenHeight, a: givenLeftSide, c: givenRightSide)

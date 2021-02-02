@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		394CF62C25C46DDD001AC9A7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394CF62B25C46DDD001AC9A7 /* main.swift */; };
+		394CF64B25C9E3E8001AC9A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394CF64A25C9E3E8001AC9A7 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		394CF62825C46DDD001AC9A7 /* PerimeterAreaVolumeHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PerimeterAreaVolumeHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		394CF62B25C46DDD001AC9A7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		394CF64A25C9E3E8001AC9A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		394CF61F25C46DDC001AC9A7 = {
 			isa = PBXGroup;
 			children = (
+				394CF64A25C9E3E8001AC9A7 /* Extensions.swift */,
 				394CF62A25C46DDD001AC9A7 /* PerimeterAreaVolumeHelper */,
 				394CF62925C46DDD001AC9A7 /* Products */,
 			);
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				394CF62C25C46DDD001AC9A7 /* main.swift in Sources */,
+				394CF64B25C9E3E8001AC9A7 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = Extensions.swift;
 				DEVELOPMENT_TEAM = U7N3AQ6LLP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -256,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = Extensions.swift;
 				DEVELOPMENT_TEAM = U7N3AQ6LLP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
